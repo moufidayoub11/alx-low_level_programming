@@ -7,7 +7,7 @@
  * "and that piece of art is useful\" - Dora Korpar, 2015-10-19"
  * using the C standard function putchar.
  *
- * Return: 0 if successful
+ * Return: 1 if not successful
  */
 
 int main(void)
@@ -22,5 +22,5 @@ int main(void)
 
 	putchar('\n');
 
-	return (0);
+	return (1);
 }
