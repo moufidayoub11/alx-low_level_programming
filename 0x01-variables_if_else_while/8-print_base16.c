@@ -6,7 +6,7 @@
  * Description: This program prints the hexadecimal charachters,
  * followed by a new line.
  *
- * Return: (0) if successfull
+ * Return: (0) if successful
  */
 
 int main(void)
