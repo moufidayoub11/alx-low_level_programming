@@ -1,0 +1,44 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.so.*
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.dll
+*.dylib
+*.so
+
+# Log files
+*.log
+
+# Package Files #
+*.dmg
+*.iso
+*.tar
+*.gz 
+*.zip 
+*.7z
+
+# Other #
+*.swp
+*~ 
+.DS_Store
