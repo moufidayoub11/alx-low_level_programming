@@ -9,7 +9,7 @@
  * each time it is executed and print whether the number stored in the variable
  * n is positive or negative.
  *
- * Return: (0) if successfull
+ * Return: (0) if successful
  */
 
 int main(void)
