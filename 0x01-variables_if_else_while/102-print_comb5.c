@@ -3,9 +3,8 @@
 /**
  * main - entry point
  *
- * Description: This program prints all possible different
- * combinations of three digits. 012 and 120 are considered
- * the same combination of the three digits 0 and 1 and 2
+ * Description: This program prints all possible
+ * combinations of two two-digit numbers.
  * seperated by ', '
  * followed by a new line.
  *
