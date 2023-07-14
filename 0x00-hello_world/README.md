@@ -1,6 +1,6 @@
 # 0x00-hello_world
 
-This subdirectory is part of the ALX Low-Level Programming repository. It contains scripts and programs related to introductory concepts in low-level programming, created as part of the ALX project 0x00-hello_world.
+This subdirectory contains scripts and programs related to introductory concepts in low-level programming, created as part of the ALX project 0x00-hello_world.
 
 ## Scripts and Programs
 
