@@ -7,7 +7,7 @@
  * followed by the alphabet in uppercase.
  * followed by a new line.
  *
- * Return: (0) if successfull
+ * Return: (0) if successful
  */
 
 int main(void)

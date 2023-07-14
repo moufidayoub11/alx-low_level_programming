@@ -9,7 +9,7 @@
  * each time it is executed and gets the last digit of that number
  * It prints different sentences according to the last digit
  *
- * Return: (0) if successfull
+ * Return: (0) if successful
  */
 
 int main(void)

@@ -6,7 +6,7 @@
  * Description: This program prints the the numbers in base 10 (0 - 9),
  * followed by a new line.
  *
- * Return: (0) if successfull
+ * Return: (0) if successful
  */
 
 int main(void)
