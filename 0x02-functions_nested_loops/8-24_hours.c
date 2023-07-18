@@ -31,11 +31,11 @@ void jack_bauer(void)
 			minuteTens = j / 10;
 			minuteOnes = j % 10;
 
-			_putchar(hourTens);
-			_putchar(hourOnes);
+			_putchar(hourTens + 48);
+			_putchar(hourOnes + 48);
 			_putchar(':');
-			_putchar(minuteTens);
-			_putchar(minuteOnes);
+			_putchar(minuteTens + 48);
+			_putchar(minuteOnes + 48);
 
 			_putchar('\n');
 		}
