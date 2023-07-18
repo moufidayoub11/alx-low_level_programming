@@ -23,13 +23,8 @@ int main(void)
 	{
 		long int next = a + b;
 
-		printf(", ", sum);
+		printf(", ");
 		printf("%ld", next);
-
-		if (next > 4000000)
-		{
-			break;
-		}
 
 		if (next % 2 == 0)
 		{
