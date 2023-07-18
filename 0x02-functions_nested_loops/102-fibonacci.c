@@ -14,10 +14,17 @@ int main(void)
 	long int a = 1;
 	long int b = 2;
 	long int sum = b;
+	
+	putchar('1');
+	printf(", ");
+	putchar('2');
 
 	while (i < 50)
 	{
 		long int next = a + b;
+
+		printf(", ", sum);
+		printf("%ld", next);
 
 		if (next > 4000000)
 		{
@@ -34,7 +41,7 @@ int main(void)
 		i++;
 	}
 
-	printf("%ld\n", sum);
+	putchar('\n');
 
 	return (0);
 }
