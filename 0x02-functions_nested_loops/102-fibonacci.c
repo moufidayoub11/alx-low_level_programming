@@ -3,18 +3,19 @@
 /**
  * main - Entry point
  *
- * Description: This program prints all the even numbers in fibb sequence
+ * Description: This program prints the first 50 numbers in fibb
  *
  * Return: 0 is successful
  */
 
 int main(void)
 {
+	int i = 0;
 	long int a = 1;
 	long int b = 2;
 	long int sum = b;
 
-	while (1)
+	while (i < 50)
 	{
 		long int next = a + b;
 
@@ -30,6 +31,7 @@ int main(void)
 
 		a = b;
 		b = next;
+		i++;
 	}
 
 	printf("%ld\n", sum);
