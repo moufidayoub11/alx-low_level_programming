@@ -14,12 +14,12 @@ int main(void)
 	long int a = 1;
 	long int b = 2;
 	long int sum = b;
-	
+
 	putchar('1');
 	printf(", ");
 	putchar('2');
 
-	while (i < 50)
+	while (i < 48)
 	{
 		long int next = a + b;
 
