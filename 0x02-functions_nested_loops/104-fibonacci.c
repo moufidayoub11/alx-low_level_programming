@@ -3,40 +3,39 @@
 /**
  * main - Entry point
  *
- * Description: This program prints the first 50 numbers in fibb
+ * Description: This program prints the first 98 numbers in fibb
  *
  * Return: 0 is successful
  */
 
 int main(void)
 {
-	int i = 0;
-	long int a = 1;
-	long int b = 2;
-	long int sum = b;
+	unsigned long int index, fib_current, fib_next;
+	unsigned long int high_part_current, low_part_current;
+	unsigned long int high_part_next, low_part_next;
 
-	putchar('1');
-	printf(", ");
-	putchar('2');
-
-	while (i < 96)
+	fib_current = 1;
+	fib_next = 2;
+	printf("%lu", fib_current);
+	for (index = 1; index < 91; index++)
 	{
-		long int next = a + b;
-
-		printf(", ");
-		printf("%ld", next);
-
-		if (next % 2 == 0)
-		{
-			sum += next;
-		}
-
-		a = b;
-		b = next;
-		i++;
+		printf(", %lu", fib_next);
+		fib_next = fib_next + fib_current;
+		fib_current = fib_next - fib_current;
 	}
-
-	putchar('\n');
-
+	high_part_current = fib_current / 1000000000;
+	low_part_current = fib_current % 1000000000;
+	high_part_next = fib_next / 1000000000;
+	low_part_next = fib_next % 1000000000;
+	for (index = 92; index < 99; ++index)
+	{
+		printf(", %lu", high_part_next + (low_part_next / 1000000000));
+		printf("%lu", low_part_next % 1000000000);
+		high_part_next = high_part_next + high_part_current;
+		high_part_current = high_part_next - high_part_current;
+		low_part_next = low_part_next + low_part_current;
+		low_part_current = low_part_next - low_part_current;
+	}
+	printf("\n");
 	return (0);
 }
