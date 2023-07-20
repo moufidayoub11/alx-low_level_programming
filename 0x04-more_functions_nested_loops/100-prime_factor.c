@@ -18,14 +18,14 @@ int largest_prime_factor(long int n)
 
 	for (i = 3; i <= sqrt(n); i += 2)
 	{
-		while(n % i == 0)
+		while (n % i == 0)
 			n /= i;
 	}
 
 	if (n > 2)
-		return n;
+		return (n);
 
-	return 2;
+	return (2);
 }
 
 /**
@@ -40,8 +40,8 @@ int main(void)
 {
 	long int i = 612852475143;
 	int answer = largest_prime_factor(i);
-	
+
 	printf("%d\n", answer);
-	
+
 	return (0);
 }
