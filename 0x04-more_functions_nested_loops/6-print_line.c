@@ -14,7 +14,7 @@ void print_line(int n)
 
 	if (n <= 0)
 	{
-		_putcharr('\n');
+		_putchar('\n');
 		return;
 	}
 
