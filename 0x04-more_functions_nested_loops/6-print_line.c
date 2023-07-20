@@ -10,6 +10,8 @@
 
 void print_line(int n)
 {
+	int i;
+
 	if (n <= 0)
 	{
 		_putcharr('\n');
