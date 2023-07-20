@@ -20,12 +20,12 @@ void print_triangle(int n)
 
 	for (j = 0; j < n; j++)
 	{
-		for (i = 0; i < n - i - 1; i++)
+		for (i = 0; i < n - j - 1; i++)
 		{
 			_putchar(' ');
 		}
 
-		for (k = 0; k < i; k++)
+		for (k = 0; k <= j; k++)
 		{
 			_putchar('#');
 		}
