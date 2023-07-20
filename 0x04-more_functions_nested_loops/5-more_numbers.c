@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* print_most_numbers  - Function that prints the numbers (0 - 14) ten times
+* more_numbers  - Function that prints the numbers (0 - 14) ten times
 *
 * Return: void, this function does't return any value
 */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	int i;
 
