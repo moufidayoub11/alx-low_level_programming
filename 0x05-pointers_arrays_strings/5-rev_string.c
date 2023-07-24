@@ -11,18 +11,16 @@
 void rev_string(char *s)
 {
 	int count = 0;
-	char *temp;
+	int i;
+	char temp;
 
 	while (s[count])
 		count++;
 
-	temp = malloc(count * sizeof(char));
-	while (count--)
-		temp  = s[count];
-
-	count = 0;
-	while (temp[count])
+	for (i = 0; i < length / 2; i++)
 	{
-		s[i] = temp[count];
+		temp  = s[i];
+		s[i] = s[count - i];
+		s[count - i] = temp;
 	}
 }
