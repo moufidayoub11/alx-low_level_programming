@@ -11,8 +11,9 @@
 int main(void) {
 	char password[64];
 	int i, target_sum, random_char;
+	time_t t;
 
-	srand((unsigned)time(0));
+	srand((unsigned)time(&t));
 	target_sum = 0xad4;
 	i = 0;
 
