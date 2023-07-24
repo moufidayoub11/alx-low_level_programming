@@ -14,14 +14,14 @@ void puts2(char *str)
 	int i;
 	int length;
 
-	while (s[length])
+	while (str[length])
 		length++;
 
 	for (i = 0; i < length; i += 2)
 	{
-		if (i >= length || !s[i])
+		if (i >= length || !str[i])
 			break;
-		_putchar(s[i]);
+		_putchar(str[i]);
 	}
 
 	_putchar('\n');
