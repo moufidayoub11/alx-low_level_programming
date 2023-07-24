@@ -17,10 +17,10 @@ void rev_string(char *s)
 	while (s[count])
 		count++;
 
-	for (i = 0; i < length / 2; i++)
+	for (i = 0; i < count / 2; i++)
 	{
 		temp  = s[i];
-		s[i] = s[count - i];
-		s[count - i] = temp;
+		s[i] = s[count - i - 1];
+		s[count - i - 1] = temp;
 	}
 }
