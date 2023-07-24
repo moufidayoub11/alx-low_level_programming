@@ -7,32 +7,39 @@
   * 
   * Return: always 0.
   */
-
-int main(void) {
+int main(void)
+{
 	char password[64];
-	int i, target_sum, random_char;
+	int index, target_sum, random_char, current_sum;
 	time_t t;
 
-	srand((unsigned)time(&t));
+	srand((unsigned) time(&t));
+	current_sum = 0;
 	target_sum = 0xad4;
-	i = 0;
+	index = 0;
 
-	while (i < 63) {
-		if (target_sum > 170 && i == 62) {
-			random_char = target_sum - 170;
-			password[i] = random_char;
-			password[i + 1] = '\0';
+	while (index < 64)
+	{
+		if (target_sum - current_sum > 126)
+			random_char = rand() % 83 + 44;
+		else if (target_sum - current_sum < 126 && target_sum - current_sum > 44)
+		{
+			random_char = target_sum - current_sum;
+			password[index] = random_char;
+			password[index + 1] = '\0';
 			break;
 		}
-
-		random_char = rand() % 83 + 44;
-		password[i] = random_char;
-
-		target_sum -= random_char;
-		i++;
+		else
+		{
+			index = 0;
+			current_sum = 0;
+			continue;
+		}
+		current_sum = current_sum + random_char;
+		password[index] = random_char;
+		password[index + 1] = '\0';
+		index++;
 	}
-
-	printf("%s\n", password);
-
-	return 0;
+	printf("%s", password);
+	return (0);
 }
