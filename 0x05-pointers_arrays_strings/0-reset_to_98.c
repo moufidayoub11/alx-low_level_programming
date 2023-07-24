@@ -3,7 +3,7 @@
 /**
  * reset_to_98 - Function that resets the given int pointer
  *
- * @*n: pointer to n
+ * @n: input integer
  *
  * Return: void, No return value
  */
