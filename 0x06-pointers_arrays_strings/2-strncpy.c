@@ -22,8 +22,12 @@ char *_strncpy(char *dest, char *src, int n)
 		n--;
 	}
 
-	if (n)
-		*temp_dest = '\0';
+	while (n)
+	{
+		temp_dest = '\0';
+		temp_dest++;
+		n--;
+	}
 
 	return (dest);
 }
