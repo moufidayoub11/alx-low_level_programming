@@ -29,17 +29,17 @@ Here's a list of programs in this directory:
 To utilize these programs:
 
 1. Clone this repository:
-```
+```bash
 $ git clone https://github.com/moufidayoub11/alx-low_level_programming.git
 ```
 
 3. Go to `0x02-functions_nested_loops` directory:
-```
+```bash
 $ cd alx-low_level_programming/0x02-functions_nested_loops
 ```
 
 4. Create a `main.c` file that includes `main.h` and calls your chosen function. For example, to call `_putchar()`, your `main.c` might look like:
-```
+```c
 #include "main.h"
 
 int main(void)
@@ -50,13 +50,13 @@ int main(void)
 ```
 
 4. Compile `main.c` with your chosen .c file (i.e., `program-name.c`) and execute:
-```
+```bash
 $ gcc main.c program-name.c -o output && ./output
 ```
 Replace `program-name.c` with the .c file of your chosen program.
 
 For the `0-putchar.c`, `100-times_table.c`, `101-natural.c`, `102-fibonacci.c`, `103-fibonacci.c`, `104-fibonacci.c` programs, directly compile and run:
-```
+```bash
 $ gcc program-name.c -o output && ./output
 ```
 Replace `program-name.c` with the .c file of the chosen program.
