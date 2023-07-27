@@ -20,12 +20,12 @@ In addition, there's a header file:
 To use these programs:
 
 1. Clone this repository:
-```
+```bash
 $ git clone https://github.com/moufidayoub11/alx-low_level_programming.git
 ```
 
 2. Navigate to the `0x03-debugging` directory:
-```
+```bash
 $ cd alx-low_level_programming/0x03-debugging
 ```
 
@@ -41,7 +41,7 @@ int main(void)
 ```
 
 4. Compile `main.c` with the .c file of the program you want to debug and execute:
-```
+```bash
 $ gcc main.c program-name.c -o output && ./output
 ```
 
