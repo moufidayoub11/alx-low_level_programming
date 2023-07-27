@@ -21,27 +21,27 @@ Below is a list of scripts and programs included in this directory:
 To use these scripts and programs, follow the instructions below:
 
 1. Clone this repository to your local machine.
-```
+```bash
 $ git clone https://github.com/moufidayoub11/alx-low_level_programming.git
 ```
 
 2. Navigate to the `0x00-hello_world` directory.
-```
+```bash
 $ cd alx-low_level_programming/0x00-hello_world
 ```
 
 3. Choose the script or program you want to run and execute it.
 For scripts:
-```
+```bash
 $ ./script-name
 ```
 For C programs:
 First, compile the C file:
-```
+```bash
 $ gcc program-name.c -o program-name
 ```
 Then, run the program:
-```
+```bash
 $ ./program-name
 ```
 Note: Replace `script-name` and `program-name` with the actual names of the scripts and programs you want to run.
