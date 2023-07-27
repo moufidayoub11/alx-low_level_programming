@@ -25,22 +25,22 @@ Below is a list of programs included in this directory:
 To use these programs, follow the instructions below:
 
 1. Clone this repository to your local machine.
-```
+```bash
 $ git clone https://github.com/moufidayoub11/alx-low_level_programming.git
 ```
 
 2. Navigate to the `0x01-variables_if_else_while` directory.
-```
+```bash
 $ cd alx-low_level_programming/0x01-variables_if_else_while
 ```
 
 3. Choose the program you want to run and execute it.
 First, compile the C file:
-```
+```bash
 $ gcc program-name.c -o program-name
 ```
 Then, run the program:
-```
+```bash
 $ ./program-name
 ```
 Note: Replace `program-name` with the actual name of the program you want to run.
