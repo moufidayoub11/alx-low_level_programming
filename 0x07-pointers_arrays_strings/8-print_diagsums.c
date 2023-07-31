@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_diagsums - Function that prints the sum of the diagonals af 2d array. 
+ * print_diagsums - Function that prints the sum of the diagonals af 2d array.
  *
  * @a: the 1d representation of a 2d array of integers.
  * @size: the size of both rows and columns
