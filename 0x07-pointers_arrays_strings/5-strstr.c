@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _strstr - Function that searches a needle inside a haystack.
@@ -26,5 +27,5 @@ char *_strstr(char *haystack, char *needle)
 			return (haystack);
 	}
 
-	return (haystack);
+	return (NULL);
 }
