@@ -11,12 +11,7 @@ int check_prime_helper(int num, int i);
  */
 int is_prime_number(int n)
 {
-	int temp = n;
-
-	if (n < 0)
-		temp = -n;
-
-	return (check_prime_helper(temp, 2));
+	return (check_prime_helper(n, 2));
 }
 
 /**
