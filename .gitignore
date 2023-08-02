@@ -42,3 +42,4 @@
 *.swp
 *~ 
 .DS_Store
+test.c
