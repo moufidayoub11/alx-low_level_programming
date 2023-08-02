@@ -35,6 +35,6 @@ int _sqrt_helper(int n, int start)
 		return (start);
 	else if (square > n)
 		return (-1);
-	else if (square < n)
-		_sqrt_helper(n, start + 1);
+	else
+		return (_sqrt_helper(n, start + 1));
 }
