@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 int is_palindrome_helper(char *s, int start, int end);
 
@@ -14,12 +15,10 @@ int is_palindrome_helper(char *s, int start, int end);
 int is_palindrome(char *s)
 {
 	int len = 0;
-	char *temp = s;
 
 	if (!s || *s == '\0')
 		return (1);
-	while (*temp++)
-		len++;
+	len = strlen(s);
 
 	return (is_palindrome_helper(s, 0, len - 1));
 }
