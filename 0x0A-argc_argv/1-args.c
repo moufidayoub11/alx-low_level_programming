@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Description: Program that  that prints the number of
+ * Description: Program that prints the number of
  * arguments passed into it.
  *
  * @argc: number of arguments
