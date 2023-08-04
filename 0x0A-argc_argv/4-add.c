@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - entry point
@@ -15,21 +16,24 @@
 
 int main(int argc, char **argv)
 {
-	int i, res = 0, num;
-	char *char_num;
+	int i, res = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		char_num = argv[i];
-		num = atoi(char_num);
+		char *current_arg = argv[i];
+		char *ptr = current_arg;
 
-		if (*char_num != '0' && num == 0)
+		while (*ptr != '\0')
 		{
-			printf("Error\n");
-			return (1);
+			if (!isdigit(*ptr))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			ptr++;
 		}
 
-		res += num;
+		res += atoi(current_arg);
 	}
 
 	printf("%d\n", res);
