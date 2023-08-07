@@ -43,7 +43,7 @@ int count_words(char *str)
 char **strtow(char *str)
 {
 	char **word_matrix, *word_tmp;
-	int i, wmi, word_count = 0, str_len = 0, c = 0, word_start, word_end;
+	int i, wmi = 0, word_count = 0, str_len = 0, c = 0, word_start, word_end;
 
 	while (str[str_len])
 		str_len++;
