@@ -22,19 +22,20 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < (size_t) ac; i++)
 		for (j = 0; av[i][j] != '\0'; j++)
 			size++;
+	size += ac;
 
-	str = malloc(sizeof(char) * size + ac);
+	str = malloc(sizeof(char) * size);
 
 	if (!str)
 		return (NULL);
 
 	temp = str;
 
-	for (i = 0; i < ac; i++)
+	for (i = 0; i < (size_t) ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 			*temp++ = av[i][j];
-		if (i == ac - 1)
+		if (i == (size_t) (ac - 1))
 			*temp++ = '\0';
 		else
 			*temp++ = '\n';
