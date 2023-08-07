@@ -4,7 +4,7 @@
 /**
  * free_grid - Function that frees a 2 dimensional array
  *
- * @width: 2d array
+ * @grid: 2d array
  * @height: the height of the array
  *
  * Return: void, retuns nothing
