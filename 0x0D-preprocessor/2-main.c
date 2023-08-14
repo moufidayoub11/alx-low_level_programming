@@ -5,7 +5,7 @@
  *
  * Description: prints the name of the source file
  *
- * return: 0 if successful
+ * Return: 0 if successful
  */
 
 int main(void)
