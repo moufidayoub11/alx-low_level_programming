@@ -11,22 +11,24 @@
 
 size_t print_list(const list_t *h)
 {
+	char *value;
 	size_t numberOfNodes = 0;
+	size_t size;
 
 	if (!h)
 		return (0);
 
 	while (h)
 	{
-		char *value = h->str;
-		size_t size = h->len;
+		value = h->str;
+		size = h->len;
 
 		if (!value)
 		{
 			value = "(nil)";
 			size = 0;
 		}
-		printf("[%u] %s\n", size, value);
+		printf("[%lu] %s\n", size, value);
 
 		h = h->next;
 		numberOfNodes++;
