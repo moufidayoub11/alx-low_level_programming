@@ -6,7 +6,6 @@
  *
  * Return: void, returns nothing
  */
-
 void free_list(list_t *head)
 {
 	list_t *temp;
