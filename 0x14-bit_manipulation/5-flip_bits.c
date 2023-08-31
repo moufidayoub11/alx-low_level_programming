@@ -30,5 +30,5 @@ int count_set_bits(unsigned long int n)
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	return (count_bits_needed(n ^ m));
+	return (count_set_bits(n ^ m));
 }
