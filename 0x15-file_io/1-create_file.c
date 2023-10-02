@@ -43,8 +43,10 @@ size_t _strlen(const char *string)
 {
 	int i = 0;
 
-	while (string[i++])
-		;
+	while (string[i])
+	{
+		i++;
+	}
 
 	return (i);
 }
