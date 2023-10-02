@@ -13,18 +13,19 @@ size_t _strlen(const char *string);
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
-	int buff_size;
+	int buff_size = 0;
 
 	if (!filename)
 		return (-1);
 
-	buff_size = _strlen(text_content);
+	if (text_content)
+		buff_size = _strlen(text_content);
 
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (fd == -1)
 		return (fd);
 
-	if (buff_size == 0 || write(fd, text_content, buff_size) == -1)
+	if (write(fd, text_content, buff_size) == -1)
 		return (-1);
 
 	close(fd);
