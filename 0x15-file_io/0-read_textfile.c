@@ -11,10 +11,18 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char buffer[letters];
+	char *buffer;
 	int fd;
 	ssize_t read_bytes;
 	ssize_t printed_bytes;
+
+
+	buffer = (char *)malloc(letters);
+
+	if (buffer == NULL)
+	{
+		return (0);
+	}
 
 	if (!filename)
 		return (0);
